@@ -9,10 +9,10 @@
 .. image:: images/AdGuard-Home.png
    :width: 350px
 
-Home Assistant Addon: AdGuard Home
-==================================
+AdGuard Home Addon
+==================
 
-Ein (Ad)Blocker im Heim-Netzwerk
+Ein DNS/AdBlocker im Heim-Netzwerk
 
 Markus Pöschl
 
@@ -33,8 +33,7 @@ Agenda
 
 ----
 
-.. image:: images/AdGuard-Home.png
-   :width: 350px
+.. image:: images/adguard-overview.png
 
 AdGuard Home
 ------------
@@ -52,6 +51,8 @@ AdGuard Home
 * Installation im Netzwerk
 * Keine Veränderung auf den Endgeräten
 
+* Integrierte Listen für Malware/Pishing und Erwachsenen-Content
+
 .. note::
 
   * AdGuard Home als eigener DNS Server im Netzwerk
@@ -61,7 +62,6 @@ AdGuard Home
 ----
 
 .. image:: images/DNS.png
-   :class: big
 
 DNS ?
 -----
@@ -83,8 +83,7 @@ DNS ?
 :data-x: r0
 :data-y: r1200
 
-.. image:: images/DNS.png
-   :class: big
+.. image:: images/DNS-unsecure.png
 
 DNS ist sicher?
 ---------------
@@ -102,8 +101,7 @@ Standardmäßig: **Nein**
 
 ----
 
-.. image:: images/DNS.png
-   :class: big
+.. image:: images/DNS-DoT.png
 
 DNS over TLS (DoT)
 ------------------
@@ -118,11 +116,10 @@ DNS over TLS (DoT)
 
 ----
 
-.. image:: images/DNS.png
-   :class: big
+.. image:: images/DNS-DoH.png
 
-DNS over HTTP (DoH)
-------------------
+DNS over HTTPS (DoH)
+--------------------
 
 * Verschlüsselung der Namensauflösung mittels einer HTTPS Verbindung
 * Kein Mitlesen möglich
@@ -131,53 +128,72 @@ DNS over HTTP (DoH)
 ----
 
 :data-x: r2400
+:data-y: r0
 
-.. image:: images/DNS.png
+.. image:: images/DNS-Adguard.png
    :class: big
 
 AdGuard Home Addon
 ------------------
 
 * Eigener DNS im Heimnetz
-* Der Router muss die IP Adresse des Servers kennen
-* **Home Assistant braucht einen eigenen DNS**
+* Blockierung durch Nicht-Auflösen von DNS-Adressen
+
+Installationshinweise im Supervisor Addon-Store!
 
 .. note::
 
   * Router verteilt DNS Server bei Netzwerkanmeldung mit
-  * HA muss Namen auflösen, auf sich selbst dreht Kreis
+  * HA muss Namen auflösen, deshalb eigener DNS nötig
 
 ----
 
 :data-x: r0
 :data-y: r1200
 
-.. image:: images/DNS.png
-   :class: big
+.. image:: images/adguard-dns-upstream.png
 
 AdGuard Home DNS Server
 -----------------------
 
-TBD DNS Settings
+* Mehrere DNS-Server einstellbar
+* DoT/DoH Unterstützung
+* DNS für bestimmte Domains festlegen
+
+* Liste an DNS Servern: https://dnscrypt.info/public-servers/
+
+|local_adguard_addon|
 
 ----
 
-.. image:: images/DNS.png
-   :class: big
+.. image:: images/adguard-filterlists.png
 
 AdGuard Home Filterlisten
 -------------------------
 
-TBD Filter und Kinderschutz
+* Integration von `hosts` Dateien oder AdGuard Syntax
+* Viele Blocklisten öffentlich verfügbar
+* Filterlisten sollten regelmäßig gepflegt werden
+
+|local_adguard_addon|
 
 ----
 
 :data-x: r2400
+:data-y: r0
 
-.. image:: images/DNS.png
-   :class: big
+.. image:: images/filterlists.png
 
 Filterlisten finden
 -------------------
 
-TBD Filterlisten
+* Filterlisten in Foren von AdGuard Home / Pi-Hole
+* https://filterlists.com/ listet über 400 Listen
+* https://firebog.net/
+* Adblocker-Einstellungen im Browser
+
+----
+
+.. |local_adguard_addon| raw:: html
+
+   <a href="https://p-assist.fritz.box/a0d7b954_adguard" target="_blank">Demo</a>
