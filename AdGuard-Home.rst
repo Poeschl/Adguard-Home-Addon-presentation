@@ -139,12 +139,13 @@ AdGuard Home Addon
 * Eigener DNS im Heimnetz
 * Blockierung durch Nicht-Auflösen von DNS-Adressen
 
-Installationshinweise im Supervisor Addon-Store!
+Installationshinweise im Supervisor Addon-Store beachten!
 
 .. note::
 
   * Router verteilt DNS Server bei Netzwerkanmeldung mit
   * HA muss Namen auflösen, deshalb eigener DNS nötig
+  * Im Router als Netzwerk-DNS eintragen
 
 ----
 
@@ -206,8 +207,8 @@ Fazit
 
 * Einfache Installation
 * Privacy Zugewinn
-* Tracking / Werbefrei
-* Standalone Installtion als Addon möglich
+* Tracking- / Werbe-freies Netzwerk
+* Standalone Installation als Addon
 
 
 .. |local_adguard_addon| raw:: html
