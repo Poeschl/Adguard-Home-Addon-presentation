@@ -188,11 +188,27 @@ Filterlisten finden
 -------------------
 
 * Filterlisten in Foren von AdGuard Home / Pi-Hole
-* https://filterlists.com/ listet über 400 Listen
-* https://firebog.net/
+* https://filterlists.com/ - listet über 400 Listen
+* https://firebog.net/ - ca. 100 Listen handverlesen
 * Adblocker-Einstellungen im Browser
 
 ----
+
+.. image:: images/ha-integration.png
+
+Integration Home Assistant
+--------------------------
+
+* Darstellung / Services durch Integrationen
+
+Fazit
+-----
+
+* Einfache Installation
+* Privacy Zugewinn
+* Tracking / Werbefrei
+* Standalone Installtion als Addon möglich
+
 
 .. |local_adguard_addon| raw:: html
 
